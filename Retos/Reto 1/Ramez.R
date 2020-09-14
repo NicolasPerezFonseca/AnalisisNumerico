@@ -1,22 +1,22 @@
 library(Rmpfr)
-#f1 es la funci髇 dada en el enunciado 
+#f1 es la funci贸n dada en el enunciado 
 f1 = function(x)
 {
    return(exp(sin(x)-cos(x^2)))
 }
-#Intervalo en el cual se desea hacer la paroximaci髇 polin髆ica
+#Intervalo en el cual se desea hacer la paroximaci贸n polin贸mica
 LI<- mpfr(-2^(-8),120)
 LS<- mpfr(2^(-8),120)
 #iteraciones es el grado estimado del polinomio
 iteraciones = 500
-#error es el error con el se desea evaluar la aproximaci髇
+#error es el error con el se desea evaluar la aproximaci贸n
 error <- mpfr(2^(-90),120)
 print(error)
-#Funci髇 que se encarga de elaborar el polinomio apoximado de acuerdo
-#con la funci髇 dada.
+#Funci贸n que se encarga de elaborar el polinomio apoximado de acuerdo
+#con la funci贸n dada.
 #
-#Los par醡etros son los l韒ites del itevalo sobre el que se desea hacer
-#la aproximaci髇, e es el error, y n es el n鷐ero de iteraciones.
+#Los par谩metros son los l铆mites del itevalo sobre el que se desea hacer
+#la aproximaci贸n, e es el error, y n es el n煤mero de iteraciones.
 aproximacionPolinomica = function(limiteInferior,limiteSuperior,e,n)
 {
   iteracion = 0
@@ -51,5 +51,5 @@ aproximacionPolinomica = function(limiteInferior,limiteSuperior,e,n)
   }
 }
 
-#Llamado a la aproximaci髇 polin髆ica
+#Llamado a la aproximaci贸n polin贸mica
 print(aproximacionPolinomica(limiteInferior=LI,limiteSuperior=LS,e=error,n=iteraciones))
