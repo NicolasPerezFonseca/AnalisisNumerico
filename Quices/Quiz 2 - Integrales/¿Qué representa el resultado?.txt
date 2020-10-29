@@ -1,3 +1,5 @@
  ¿Qué representa el resultado?
  
 Es la suma de las áreas bajo las curvas definidas en n intervalos de la funcion dada con la tolerancia dada.
+
+En el caso de la tolerancia de 1e-4 el resultado se muestra lejano, sin embargo, según mis pruebas con 8 intervalos, es decir un n=8, se aproxima al valor dado por Wolfram y Symbolab.
