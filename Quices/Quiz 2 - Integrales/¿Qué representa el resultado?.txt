@@ -1,0 +1,3 @@
+ ¿Qué representa el resultado?
+ 
+Es la suma de las áreas bajo las curvas definidas en n intervalos de la funcion dada con la tolerancia dada.
